@@ -1,19 +1,25 @@
 #include <stdio.h>
-//Girilen sayýnýn ilk ve son basamaðýný bulan program.
+//1+11+111+..... n terimli dizinin toplamýný bulan program.
 int main(){
 	int n;
-	int first;
-	int last;
+	int toplam=0;
 	int i;
-	printf("Bir sayi giriniz:");
-	scanf("%d",&n);
-	last=n%10;
-	printf("Son basamak:%d\n",last);
-	while(n>=10){
-		n=n/10;
-	}
-	first=n;
-	printf("Ilk basamak:%d",first);
-	return 0;
+	int a=1;
+	printf("Bir sayi giriniz:");	
+		scanf("%d",&n);
+	for(i=0;i<=n;i++){
+		printf("%d",a);
+	if(i<n){
+		printf("+ ");
+		}
+	toplam+=a;
+	a=(a*10)+1;
 	
-}
+			
+		}
+		printf("=%d",toplam);
+		return 0;
+		
+	}
+	
+

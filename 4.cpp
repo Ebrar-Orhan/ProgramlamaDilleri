@@ -1,11 +1,11 @@
 #include <stdio.h>
-int main (){
-    int s;
-    printf("Bir sayi giriniz:");
-scanf("%d",&s);
-    if (s>0)
-       printf("Donma Noktasinin Uzerinde");
-    else
-       printf("Donma Noktasinin Altinda");
-return 0;
-}       
+//Ýlk 50 doðal sayýnýn toplamýný bulan program.
+int main(){
+	int i;
+	int toplam=0;
+	for(i=0; i<50;i++){
+		toplam=toplam+i;
+}
+	printf("toplam=%d",toplam)	;
+	return 0;
+}

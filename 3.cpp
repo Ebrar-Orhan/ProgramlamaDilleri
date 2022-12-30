@@ -1,11 +1,9 @@
 #include <stdio.h>
+//10 kez Merhaba Dünya yazdýran program.
 int main(){
-    int N;
-    printf("Bir sayi giriniz:");
-    scanf("%d",&N);
-    if (N%2==0)
-       printf("Sayi Cifttir");
-    else
-       printf("Sayi Tektir");
-return 0;
-}       
+	int i;
+	for(i=1; i<=10;i++){
+		printf(" Merhaba Dunya\n");
+}
+	return 0;
+}

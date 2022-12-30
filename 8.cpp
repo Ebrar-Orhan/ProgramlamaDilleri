@@ -1,13 +1,27 @@
 #include <stdio.h>
-//3'ten 9'a kadar olan sayýlarýn toplamý
-
+//1 ile n arasýndaki asal sayýlarýn toplamýný bulan yazdýran program.
 int main(){
-	int i;
+	int i,j;
+	int a;
+	int n;
 	int toplam=0;
-	for(i=3;i<=9;i++){
-		printf("%d+",i);
-		toplam+=i;
+	printf("Bir n sayisi giriniz:");
+		scanf("%d",&n);
+	for(i=1;i<=n;i++){
+
+		a=1;
+		for(j=2;j<i;j++){
+			if(i%j==0){
+				a=0;
+				break;
+			}
+		}
+		if(a==1){
+		toplam=toplam+i;
 }
-	printf("=%d",toplam);
-		return 0;
+     }
+	toplam=toplam-1;
+	printf("%d\n",toplam);
+	return 0;
 }
+
